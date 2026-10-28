@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+data/
+.cache/
+.remotion/
+.venv/
+renderer/node_modules/
+renderer/.bundle-cache/
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.sqlite*
+*.log
+tests/*
+!tests/test_mac_portability.py
+顶部文案库.txt

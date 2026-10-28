@@ -1,0 +1,13 @@
+{
+  "name": "dy-whole-clip-assembler-renderer",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Silent whole-clip Remotion template; audio is separately mapped from BGM only",
+  "dependencies": {
+    "remotion": "4.0.340",
+    "@remotion/bundler": "4.0.340",
+    "@remotion/renderer": "4.0.340",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}
