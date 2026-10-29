@@ -9,5 +9,6 @@ mkdir -p "$ASSEMBLER_TEMP"
 PY="$ASSEMBLER_RUNTIME/app/bin/python"
 if [[ ! -x "$PY" ]]; then echo '请先运行 setup_mac.sh'; exit 1; fi
 cd "$ROOT"
+"$PY" "$ROOT/create_workspace_layout.py"
 "$PY" "$ROOT/initialize_starter_content.py"
 exec "$PY" app.py "$@"

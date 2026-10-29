@@ -9,5 +9,5 @@ def activate():
     if RUNTIME.is_dir() and str(RUNTIME) not in sys.path:sys.path.insert(0,str(RUNTIME))
     try:import PySide6
     except ImportError as exc:
-        raise RuntimeError('Qt界面依赖未就绪。请运行“安装Qt界面依赖.bat”；或运行“启动兼容界面.bat”。') from exc
+        raise RuntimeError('Qt界面依赖未就绪。Mac 请运行 bash setup_mac.sh，或使用 bash start_mac.sh --tk。') from exc
     return PySide6.__version__

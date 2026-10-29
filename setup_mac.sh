@@ -21,6 +21,7 @@ PYTHON="$(brew --prefix python@3.11)/bin/python3.11"
 "$PYTHON" -c 'import tkinter' || { echo 'Python Tk 不可用，请检查 python-tk@3.11。' >&2; exit 1; }
 if [[ ! -x "$ASSEMBLER_RUNTIME/app/bin/python" ]]; then "$PYTHON" -m venv "$ASSEMBLER_RUNTIME/app"; fi
 "$ASSEMBLER_RUNTIME/app/bin/python" -m pip install -r "$ROOT/requirements-ui.txt"
+"$ASSEMBLER_RUNTIME/app/bin/python" "$ROOT/create_workspace_layout.py"
 (cd "$ROOT/renderer" && npm ci --no-audit --no-fund)
 
 INDEX_COMMIT=d9e41aac89fd00b3d71497fddb287b7f24613712

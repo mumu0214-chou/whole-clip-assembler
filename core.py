@@ -80,7 +80,7 @@ def groups_for_config(cfg):
         return TYPES
     return STAGE_GROUPS if cfg.get('selection_rule_version') in STAGE_RULE_VERSIONS else GROUPS
 DEFAULTS = {
-    "material_root": _portable_path(r"D:\DY video\人工处理素材"),
+    "material_root": _portable_path(r"D:\DY video\人工处理素材\牛肉" if os.name != 'nt' else r"D:\DY video\人工处理素材"),
     "music_root": _portable_path(r"D:\DY video\音乐库"),
     "output_root": _portable_path(r"D:\DY video\整段组合成片"),
     "index_path": _portable_path(r"D:\DY video\项目管理\素材索引.csv"),

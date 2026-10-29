@@ -6,4 +6,6 @@
 
 首次准备：`bash setup_mac.sh`。日常启动：`bash start_mac.sh`。启动前请先核对 [Mac 首次使用](MAC首次使用.md) 中的限制和验收步骤。
 
+首次安装或启动会依据 [剪辑目录清单](starter_content/workspace_directories.json) 创建空目录，保留 Windows `D:\DY video` 中与剪辑相关的素材、音乐、配音、音效及输出目录层级。实际素材、音频及音色配置需要自行复制；仅创建目录不会导入音效绑定或设置。
+
 本项目调用 [IndexTTS 2.5](https://github.com/index-tts/index-tts) 和相关模型，请遵守各自许可证。本仓库不包含模型权重及第三方运行时。
